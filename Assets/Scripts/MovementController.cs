@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MovementController : MonoBehaviour
 {
+
+    [SerializeField]
+    private Transform body;
     [SerializeField]
     private Rigidbody rb;
     private bool isGrounded;
@@ -26,11 +29,21 @@ public class MovementController : MonoBehaviour
         
     }
 
-    public void GetInputData(InputData inputData)
+    public void GetInputData(InputData data)
     {
-        rb.velocity = inputData.moveVector;
-        
-        if(inputData.isJump)
+        if (data.moveVector.x > 0f)
+        {
+            body.localRotation = Quaternion.Euler(Vector3.zero);
+        }
+        else if(data.moveVector.x < 0f)
+        {
+            body.localRotation = Quaternion.Euler(0f,-180f, 0f);
+        }
+
+        Vector3 vec = new Vector3(body.right.x * Mathf.Abs(data.moveVector.x * speed), rb.velocity.y, 0f);
+        rb.velocity = vec;
+
+        if (data.isJump)
         {
             TryJump();
         }
