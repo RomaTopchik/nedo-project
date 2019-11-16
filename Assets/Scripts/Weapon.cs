@@ -17,15 +17,21 @@ public class Weapon : MonoBehaviour
 
     public void Fire()
     {
-        if (gameObject.GetComponent<SpriteRenderer>().flipX)
-        {
-            GameObject bl = Instantiate(bullet, new Vector3(transform.position.x - 0.5f, transform.position.y, transform.position.z), Quaternion.identity);
-            bl.GetComponent<Rigidbody>().velocity = new Vector3(-1, 0, 0) * speedBullet;
-        }
-        else
-        {
-            GameObject bl = Instantiate(bullet, new Vector3(transform.position.x + 0.5f, transform.position.y, transform.position.z), Quaternion.identity);
-            bl.GetComponent<Rigidbody>().velocity = new Vector3(1, 0, 0) * speedBullet;
-        }
+        Bullet bl = Instantiate(bullet, new Vector3(transform.position.x - 0.5f, transform.position.y, transform.position.z), Quaternion.identity).GetComponent<Bullet>();
+
+        
+
+
+
+        //if (gameObject.GetComponent<SpriteRenderer>().flipX)
+        //{
+        //    GameObject bl = Instantiate(bullet, new Vector3(transform.position.x - 0.5f, transform.position.y, transform.position.z), Quaternion.identity);
+        //    bl.GetComponent<Rigidbody>().velocity = new Vector3(-1, 0, 0) * speedBullet;
+        //}
+        //else
+        //{
+        //    GameObject bl = Instantiate(bullet, new Vector3(transform.position.x + 0.5f, transform.position.y, transform.position.z), Quaternion.identity);
+        //    bl.GetComponent<Rigidbody>().velocity = new Vector3(1, 0, 0) * speedBullet;
+        //}
     }
 }

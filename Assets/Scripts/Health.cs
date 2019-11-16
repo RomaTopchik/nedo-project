@@ -2,18 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Health : MonoBehaviour
+public class Health : MonoBehaviour, IDamagable
 {
-    public int health;
+    public float health;
 
-    void OnCollisionEnter(Collision collision)
+    public void GetDamage(float damage)
     {
-        if (collision.gameObject.tag == ("Bullet"))
-        {
-            health -= 10;
-            Destroy(collision.gameObject);
-        }
+        health -= damage;
+
         if (health <= 0)
             Destroy(gameObject);
     }
+
+    
+}
+
+public interface IDamagable
+{
+    void GetDamage(float damage);
+
 }
