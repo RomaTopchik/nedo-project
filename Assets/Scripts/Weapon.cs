@@ -10,8 +10,8 @@ public class Weapon : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
-            Fire();
+        //if (Input.GetButtonDown("Fire1"))
+        //    Fire();
 
     }
 
