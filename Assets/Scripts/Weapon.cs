@@ -5,19 +5,17 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public GameObject bullet;
-    public int speedBullet;
-    
     
     void Update()
     {
-        //if (Input.GetButtonDown("Fire1"))
-        //    Fire();
+        if (Input.GetButtonDown("Fire1"))
+            Fire();
 
     }
 
     public void Fire()
     {
-        Bullet bl = Instantiate(bullet, new Vector3(transform.position.x - 0.5f, transform.position.y, transform.position.z), Quaternion.identity).GetComponent<Bullet>();
+        Bullet bl = Instantiate(bullet, new Vector3(transform.position.x + 1.5f, transform.position.y, transform.position.z), Quaternion.identity).GetComponent<Bullet>();
 
         
 

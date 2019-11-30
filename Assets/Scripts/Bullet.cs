@@ -5,17 +5,19 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField]
-    private float damage = 5;
+    private BulletTableObject bulletData;
 
-    [SerializeField]
-    private float speed = 5;
+    private void Start()
+    {
+        GetComponent<Material>().mainTexture = bulletData.Icon;
+    }
 
     void OnCollisionEnter(Collision collision)
     {
         IDamagable damagable = collision.gameObject.GetComponent<IDamagable>();
         if (damagable != null)
         {
-            damagable.GetDamage(damage);
+            damagable.GetDamage(bulletData.Damage);
 
         }
         Destroy(gameObject);
@@ -23,6 +25,6 @@ public class Bullet : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(transform.right * speed);
+        transform.Translate(transform.right * bulletData.Speed);
     }
 }

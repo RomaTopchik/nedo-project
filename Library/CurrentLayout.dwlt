@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 448}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 398}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 3622
+  controlID: 1146
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 398}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 3623
+  controlID: 1088
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -215,8 +215,8 @@ MonoBehaviour:
     y: 0
     width: 206
     height: 957
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 224}
+  m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -241,8 +241,8 @@ MonoBehaviour:
     y: 0
     width: 279
     height: 957
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -359,9 +359,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.9101877, y: 1.3197433, z: -0.053710938}
+    m_Target: {x: 153.94673, y: 179.8599, z: -3.5796275}
     speed: 2
-    m_Value: {x: -3.9101877, y: 1.3197433, z: -0.053710938}
+    m_Value: {x: 153.94673, y: 179.8599, z: -3.5796275}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -393,9 +393,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: -1}
   m_Size:
-    m_Target: 8.219314
+    m_Target: 623.0593
     speed: 2
-    m_Value: 8.219314
+    m_Value: 623.0593
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -805,20 +805,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 56
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: 56
   m_LastProjectPath: E:\Unity\New Unity Project (2)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2e0a0000
-    m_LastClickedID: 2606
-    m_ExpandedIDs: 000000006609000000ca9a3b
+    m_SelectedIDs: 940a0000
+    m_LastClickedID: 2708
+    m_ExpandedIDs: 000000009009000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -846,7 +846,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 98330000
     m_LastClickedID: 13208
-    m_ExpandedIDs: 000000006609000000ca9a3b
+    m_ExpandedIDs: 000000009009000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -930,9 +930,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ba0b0000
-      m_LastClickedID: 3002
-      m_ExpandedIDs: c4fbffffc00b0000d00b0000
+      m_SelectedIDs: 2a290000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 8cf0ffff9ef0ffffb4f0ffffc6f0ffffd2faffffeafafffffcfaffff0efbffffd6fbffff6429000080290000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
